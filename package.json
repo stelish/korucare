@@ -1,0 +1,42 @@
+{
+  "name": "korucare",
+  "version": "1.0.0",
+  "description": "Koru Care NZ is a charity for children who have disabilities or a terminal illness. Koru Care are the only kids charity that do thr Trip of a Lifetime for these children, destinations include Disneyland and Goldcoast. Please show your support and donate to this worthy childrens charity.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stelish/korucare.git"
+  },
+  "keywords": [
+    "Charity",
+    "For",
+    "Children",
+    "Kids",
+    "Charity",
+    "Childrens",
+    "Charity",
+    "Child",
+    "Charities",
+    "Childrens",
+    "Charities",
+    "Donate",
+    "To",
+    "Children",
+    "Raise",
+    "Money",
+    "For",
+    "Kids",
+    "Koru",
+    "Care",
+    "NZ"
+  ],
+  "author": "Stelish.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stelish/korucare/issues"
+  },
+  "homepage": "https://github.com/stelish/korucare#readme"
+}
