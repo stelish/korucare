@@ -31,15 +31,32 @@
             margin:0 -15px;
         }
 
+        .k-logo{
+            max-height:50px;
+
+        }
+        .k-logo img{
+            height: 95px;
+            width: auto;
+            margin-left: -40px;
+            margin-top: -15px;
+        }
+
         .k-main{
             padding: 15px;
             min-height: 600px;
         }
 
+        .k-block {
+            width: 100%;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
         .k-hero{
             width: 100%;
             min-height: 800px;
-            background: url(img/Air-NZ-Koru-Care-Flight-Brooke-Joyce-Christchurch.jpg) no-repeat center center;
+            background: url(img/Air-NZ-Koru-Care-Flight-Tyrese-Whittaker-Carterton.jpg) no-repeat center center;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -64,8 +81,8 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            width: 300px;
-            height: 400px;
+            width: 500px;
+            height: 250px;
             padding: 15px;
             float: left;
             margin: 5px;
@@ -92,17 +109,37 @@
             padding:0;
         }
 
+        .k-map{
+            width: 100%;
+            height:300px;
+        }
+
     </style>
 
 </head>
 <body>
     <header>
+        <div class="k-logo">
+            <img src="img/KoruCare%20New%20FinalArt_Koru%20Care%20Colour.png">
+        </div>
 
     </header>
 
     <div class="k-main">
         <div class="k-hero"></div>
         <div class="k-content">
+            <div id="map" class="k-map">
+                <script>
+                    var map;
+                    function initMap() {
+                        map = new google.maps.Map(document.getElementById('map'), {
+                            center: {lat: -34.397, lng: 150.644},
+                            zoom: 8
+                        });
+                    }
+                </script>
+            </div>
+
             <div class="k-tiles">
                 <div class="k-tile">
                     <div class="k-tile-desc">
@@ -127,6 +164,7 @@
 
     </footer>
 
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
 
 </body>
