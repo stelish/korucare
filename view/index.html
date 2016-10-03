@@ -14,6 +14,7 @@
     <meta property="og:url" content="http://www.korucare.co.nz/" />
     <meta property="og:site_name" content="Koru Care NZ" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300" rel="stylesheet">
 
     <style>
         body{
@@ -23,7 +24,7 @@
             padding:0 15px;
         }
         header{
-            /*background: rgba(0,0,0,0.3);*/
+            font-family: 'Open Sans Condensed', sans-serif;
             background: #fff;
             padding: 5px 15px;
             min-height: 50px;
@@ -31,15 +32,47 @@
             margin:0 -15px;
         }
 
-        .k-logo{
-            max-height:50px;
+        h1 {
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
 
+        .k-logo{
+            max-height: 50px;
+            margin: 0;
+            position: absolute;
+            padding: 0;
+            top: 10px;
+            left: 10px;
         }
         .k-logo img{
             height: 95px;
             width: auto;
             margin-left: -40px;
             margin-top: -15px;
+        }
+
+        .k-navs-middle{
+            display: table;
+            margin: 0 auto;
+        }
+
+        .k-navs-middle-nav{
+            position: relative;
+            display: inline-block;
+            color: #333;
+            padding: 10px 23px;
+            line-height: 40px;
+            cursor: pointer;
+            text-decoration: none;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -webkit-user-drag: none;
+            user-select: none;
+        }
+
+        .k-navs-middle-nav > h1 {
+            margin:0;
         }
 
         .k-navs-right{
@@ -63,6 +96,7 @@
             width: 100%;
             padding: 15px;
             margin: 20px 0;
+            text-align: center;
         }
 
         .k-hero{
@@ -82,6 +116,8 @@
             font-weight: 700;
             color: #fff;
             text-transform: uppercase;
+            margin:5px;
+            display: table;
         }
 
         .k-bottom-right{
@@ -91,44 +127,44 @@
         }
 
         .k-magenta{
-            background-color: magenta;
+            background-color: orangered;
         }
 
         .k-content{
             width: 100%;
             min-height: 600px;
             background: #eee;
+            position: relative;
+            margin-top: -20px;
+        }
+
+        .k-content-wrapper{
+            max-width:1200px;
+            margin:0 auto;
         }
 
         .k-tiles {
             margin: 0 auto 20px;
-
+            padding: 20px;
         }
 
         .k-tile{
-            background: url(img/12195124_10203617835205587_6323645368294507667_o.jpg) no-repeat center center;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
             width: 500px;
-            height: 250px;
-            padding: 15px;
+            min-height: 250px;
             float: left;
-            margin: 5px;
-            border:solid 1px #ccc;
-            border-radius: 4px;
+            margin: 20px;
             position: relative;
+        }
+
+        .k-tile > img{
+            width: 100%;
+            height: auto;
         }
 
         .k-tile-desc{
             background: #fff;
-            padding: 10px 15px;
-            width: 100%;
+            padding: 10px;
             min-height: 200px;
-            position: absolute;
-            left:0;
-            bottom: 0;
         }
 
         footer{
@@ -144,6 +180,29 @@
             height:300px;
         }
 
+        .clearfix:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+
+        .k-image-zoom{
+            -webkit-transform: translateZ(0);
+            -webkit-perspective: 1000;
+            -webkit-backface-visibility: hidden;
+            transition: transform .3s;
+            -webkit-transition: -webkit-transform .3s;
+            -moz-transition: -moz-transform .3s;
+        }
+        .clearfix { display: inline-block; }
+        /* start commented backslash hack \*/
+        * html .clearfix { height: 1%; }
+        .clearfix { display: block; }
+        /* close commented backslash hack */
+
     </style>
 
 </head>
@@ -151,6 +210,19 @@
     <header>
         <div class="k-logo">
             <img src="img/logos/KoruCare%20New%20FinalArt_Koru%20Care%20Colour.png">
+        </div>
+        <div class="k-navs-middle">
+            <div class="k-middle-wrapper">
+                <div class="k-navs-middle-nav">
+                    <h1>Donate</h1>
+                </div>
+                <div class="k-navs-middle-nav">
+                    <h1>Partners</h1>
+                </div>
+                <div class="k-navs-middle-nav">
+                    <h1>Locations</h1>
+                </div>
+            </div>
         </div>
         <div class="k-navs-right">
             <ul>
@@ -167,39 +239,72 @@
 
     <div class="k-main">
         <div class="k-hero">
-            <div class="k-banner k-bottom-right k-magenta">
-                Making dreams come true
+            <div class="k-banner-wapper k-bottom-right">
+                <div class="k-banner  k-magenta">
+                    Making dreams come true
+                </div>
+                <div class="k-banner k-magenta">
+                    for over 30 years
+                </div>
             </div>
+
         </div>
         <div class="k-content">
-            <div id="map" class="k-map">
-                <script>
-                    var map;
-                    function initMap() {
-                        map = new google.maps.Map(document.getElementById('map'), {
-                            center: {lat: -34.397, lng: 150.644},
-                            zoom: 8
-                        });
-                    }
-                </script>
-            </div>
 
-            <div class="k-tiles">
-                <div class="k-tile">
-                    <div class="k-tile-desc">
+            <div class="k-content-wrapper">
+                <div class="k-block">
+                    <h1>Donate</h1>
+                </div>
 
+                <div class="k-block">
+                    <h1>Partners</h1>
+                </div>
+
+                <div class="k-tiles k-block clearfix">
+                    <h1>Our Locations</h1>
+                    <div class="k-tile">
+                        <image src="img/12195124_10203617835205587_6323645368294507667_o.jpg" class="k-image-zoom"></image>
+                        <div class="k-tile-desc">
+                            <h1>Lorem Ipsum</h1>
+                             simply dummy text of the printing and typesetting industry.
+                        </div>
+                    </div>
+                    <div class="k-tile">
+                        <image src="img/12195124_10203617835205587_6323645368294507667_o.jpg" class="k-image-zoom"></image>
+                        <div class="k-tile-desc">
+                            <h1>Lorem Ipsum</h1>
+                            simply dummy text of the printing and typesetting industry.
+                        </div>
+                    </div>
+                    <div class="k-tile">
+                        <image src="img/12195124_10203617835205587_6323645368294507667_o.jpg" class="k-image-zoom"></image>
+                        <div class="k-tile-desc">
+                            <h1>Lorem Ipsum</h1>
+                            simply dummy text of the printing and typesetting industry.
+                        </div>
+                    </div>
+                    <div class="k-tile">
+                        <image src="img/12195124_10203617835205587_6323645368294507667_o.jpg" class="k-image-zoom"></image>
+                        <div class="k-tile-desc">
+                            <h1>Lorem Ipsum</h1>
+                            simply dummy text of the printing and typesetting industry.
+                        </div>
                     </div>
                 </div>
-                <div class="k-tile">
 
-                </div>
-                <div class="k-tile">
-
-                </div>
-                <div class="k-tile">
-
+                <div id="map" class="k-map">
+                    <script>
+                        var map;
+                        function initMap() {
+                            map = new google.maps.Map(document.getElementById('map'), {
+                                center: {lat: -34.397, lng: 150.644},
+                                zoom: 8
+                            });
+                        }
+                    </script>
                 </div>
             </div>
+
 
         </div>
     </div>
@@ -208,7 +313,7 @@
 
     </footer>
 
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyC71b81QhdAeR7OwVHPi77EC2Y3Ugrp2qs&callback-initMap"></script>
 
 
 </body>
