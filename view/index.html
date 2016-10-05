@@ -26,7 +26,7 @@
         header{
             font-family: 'Open Sans Condensed', sans-serif;
             background: #fff;
-            padding: 5px 15px;
+            padding: 10px 15px;
             min-height: 50px;
             width: 100%;
             margin:0 -15px;
@@ -88,7 +88,7 @@
         }
 
         .k-main{
-            padding: 15px;
+            /*padding: 15px;*/
             min-height: 600px;
         }
 
@@ -136,6 +136,7 @@
             background: #eee;
             position: relative;
             margin-top: -20px;
+            padding-top: 30px;
         }
 
         .k-content-wrapper{
@@ -177,7 +178,7 @@
 
         .k-map{
             width: 100%;
-            height:300px;
+            height:450px;
         }
 
         .clearfix:after {
@@ -203,6 +204,44 @@
         .clearfix { display: block; }
         /* close commented backslash hack */
 
+        .k-location-tiles{
+            max-width: 890px;
+            height: 612px;
+            display: inline-flex;
+            margin: 60px 0;
+        }
+
+        .k-location-ul{
+            list-style: none;
+            margin:0;
+            padding:0;
+        }
+
+        .k-location-tile{
+            width: 400px;
+            min-height: 300px;
+            margin: 2px;
+            padding: 10px;
+            float: left;
+        }
+
+        .k-otago{
+            background: url("img/otago.jpg") no-repeat center center;
+        }
+        .k-auckland{
+            background: url("img/otago.jpg") no-repeat center center;
+        }
+        .k-southland{
+            background: url("img/otago.jpg") no-repeat center center;
+        }
+        .k-christhurch{
+            background: url("img/otago.jpg") no-repeat center center;
+        }
+
+        .k-donate-wrapper{
+            background: url("img/kc-02.jpg") no-repeat center center;
+        }
+
     </style>
 
 </head>
@@ -214,13 +253,13 @@
         <div class="k-navs-middle">
             <div class="k-middle-wrapper">
                 <div class="k-navs-middle-nav">
-                    <h1>Donate</h1>
+                    <h1>Locations</h1>
                 </div>
                 <div class="k-navs-middle-nav">
                     <h1>Partners</h1>
                 </div>
                 <div class="k-navs-middle-nav">
-                    <h1>Locations</h1>
+                    <h1>Donate</h1>
                 </div>
             </div>
         </div>
@@ -250,10 +289,50 @@
 
         </div>
         <div class="k-content">
-
             <div class="k-content-wrapper">
+
                 <div class="k-block">
-                    <h1>Donate</h1>
+
+                    <!--<div id="map" class="k-map">-->
+                        <!--<script>-->
+                            <!--var map;-->
+                            <!--function initMap() {-->
+                                <!--map = new google.maps.Map(document.getElementById('map'), {-->
+                                    <!--center: {lat: -34.397, lng: 150.644},-->
+                                    <!--zoom: 8-->
+                                <!--});-->
+                            <!--}-->
+                        <!--</script>-->
+                    <!--</div>-->
+
+                    <div class="k-location-tiles">
+                        <ul class="k-location-ul">
+                            <li class="k-location-tile k-auckland"></li>
+                            <li class="k-location-tile k-christhurch"></li>
+                            <li class="k-location-tile k-southland"></li>
+                            <li class="k-location-tile k-otago"></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+
+
+                <div class="k-block">
+                    <div class="k-donate-wrapper">
+                        <h1 style="color: white">Donate</h1>
+                    </div>
+
+                    <p>Koru Care NZ is an independent charity, and as such relies on the generosity and support of the community to make its trips possible. A donation to Koru Care helps to bring children together, children who all face some challenge in their lives, be it an ongoing medical condition, terminal illness or some other challenge in their life.
+                        How To Donate</p>
+
+                    <p>To start donating to help Koru Care you can select one of the options below:</p>
+
+                    <ul>
+                        <li style="text-align: left;">Online – Make a Personal Donation, or if you’re a company, click on one of the buttons above.</li>
+                        <li style="text-align: left;">Givealittle – Click this Givealittle link to make a donation.</li>
+                        <li style="text-align: left;">Call Koru Care NZ – 09 5232456</li>
+                    </ul>
                 </div>
 
                 <div class="k-block">
@@ -291,21 +370,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div id="map" class="k-map">
-                    <script>
-                        var map;
-                        function initMap() {
-                            map = new google.maps.Map(document.getElementById('map'), {
-                                center: {lat: -34.397, lng: 150.644},
-                                zoom: 8
-                            });
-                        }
-                    </script>
-                </div>
             </div>
-
-
         </div>
     </div>
 
