@@ -98,6 +98,10 @@
             margin: 20px 0;
             text-align: center;
         }
+        
+        .k-block h1{
+            font-size: 2.8em;
+        }
 
         .k-hero{
             width: 100%;
@@ -140,7 +144,7 @@
         }
 
         .k-content-wrapper{
-            max-width:1200px;
+            max-width:1250px;
             margin:0 auto;
         }
 
@@ -204,8 +208,19 @@
         .clearfix { display: block; }
         /* close commented backslash hack */
 
+        @keyframes animatedBackground {
+             from { background-position: 0 50%; }
+             to { background-position: 100% 50%;}
+        }
+
+        @keyframes zoomBackground {
+            from { background-size: 200% !important; }
+            to {  background-size: 400% !important; }
+        }
+
+
         .k-location-tiles{
-            max-width: 890px;
+            width: 100%;
             height: 612px;
             display: inline-flex;
             margin: 60px 0;
@@ -218,24 +233,41 @@
         }
 
         .k-location-tile{
-            width: 400px;
+            width: 600px;
             min-height: 300px;
             margin: 2px;
             padding: 10px;
             float: left;
+            transition:all 0.5s ease;
+            -webkit-transition:all 0.5s ease;
+            -o-transition:all 0.5s ease;
+            -moz-transition:all 0.5s ease;
+            -webkit-filter: brightness(0.7);
+            filter: brightness(0.7);
+        }
+
+        .k-location-tile:hover{
+            background-position: 0 0;
+            background-repeat: repeat-x;
+            /*animation: animatedBackground 40s linear infinite;*/
+            animation:
+            animatedBackground 15s infinite alternate,
+            zoomBackground 5s infinite alternate;
+            /*-webkit-transform: scale(1.05, 1.05);*/
+            /*transform: scale(1.05, 1.05);*/
         }
 
         .k-otago{
-            background: url("img/otago.jpg") no-repeat center center;
+            background: url("img/otago.jpg") no-repeat 0 50%;
         }
         .k-auckland{
-            background: url("img/otago.jpg") no-repeat center center;
+            background: url("img/akl-pan.jpg") no-repeat 60% 0;
         }
         .k-southland{
-            background: url("img/otago.jpg") no-repeat center center;
+            background: url("img/otago.jpg") no-repeat 0;
         }
         .k-christhurch{
-            background: url("img/otago.jpg") no-repeat center center;
+            background: url("img/otago.jpg") no-repeat 0;
         }
 
         .k-donate-wrapper{
@@ -304,6 +336,10 @@
                             <!--}-->
                         <!--</script>-->
                     <!--</div>-->
+
+                        <h1>Lorem Ipsum</h1>
+                        simply dummy text of the printing and typesetting industry.
+
 
                     <div class="k-location-tiles">
                         <ul class="k-location-ul">
