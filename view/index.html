@@ -232,29 +232,47 @@
             padding:0;
         }
 
+        .k-location-ul li{
+            overflow: hidden;
+            float: left;
+            margin: 2px;
+            position: relative;
+        }
+
         .k-location-tile{
             width: 600px;
             min-height: 300px;
-            margin: 2px;
             padding: 10px;
-            float: left;
             transition:all 0.5s ease;
             -webkit-transition:all 0.5s ease;
             -o-transition:all 0.5s ease;
             -moz-transition:all 0.5s ease;
-            -webkit-filter: brightness(0.7);
-            filter: brightness(0.7);
+            -webkit-filter: brightness(0.6);
+            filter: brightness(0.6);
         }
 
         .k-location-tile:hover{
-            background-position: 0 0;
-            background-repeat: repeat-x;
-            /*animation: animatedBackground 40s linear infinite;*/
-            animation:
-            animatedBackground 15s infinite alternate,
-            zoomBackground 5s infinite alternate;
-            /*-webkit-transform: scale(1.05, 1.05);*/
-            /*transform: scale(1.05, 1.05);*/
+            -moz-transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+
+        .k-location-label{
+            color: #fff;
+            display: block;
+            font-size: 26px;
+            position: absolute;
+            left: 15px;
+            bottom: 15px;
+            text-shadow: 1px 1px #333;
+            -webkit-transition: -webkit-transform .25s;
+            transition: -webkit-transform .25s;
+            transition: transform .25s, -webkit-transform .25s;
+            word-break: break-word;
+            z-index: 1;
+            -webkit-transition:all 0.5s ease;
+            -o-transition:all 0.5s ease;
+            -moz-transition:all 0.5s ease;
         }
 
         .k-otago{
@@ -270,8 +288,28 @@
             background: url("img/otago.jpg") no-repeat 0;
         }
 
+        .k-donate{
+            position: relative;
+            text-align: center;
+        }
+
+        .k-donate h1{
+            font-size: 48px;
+            font-weight: bold;
+            position: absolute;
+            top: 200px;
+            left: 45%;
+            z-index: 100;
+            text-shadow: 1px 1px #333;
+        }
+
         .k-donate-wrapper{
-            background: url("img/kc-02.jpg") no-repeat center center;
+            background: url(img/kc-02.jpg) no-repeat center center;
+            min-height: 300px;
+            -webkit-filter: brightness(0.8);
+            filter: brightness(0.8);
+            margin-left: -15px;
+            margin-right: 15px;
         }
 
     </style>
@@ -343,32 +381,26 @@
 
                     <div class="k-location-tiles">
                         <ul class="k-location-ul">
-                            <li class="k-location-tile k-auckland"></li>
-                            <li class="k-location-tile k-christhurch"></li>
-                            <li class="k-location-tile k-southland"></li>
-                            <li class="k-location-tile k-otago"></li>
+                            <li>
+                                <div class="k-location-tile k-auckland"></div>
+                                <span class="k-location-label">Auckland Region</span>
+                            </li>
+                            <li>
+                                <div class="k-location-tile k-christhurch"></div>
+                                <span class="k-location-label">Christchurch Region</span>
+                            </li>
+                            <li>
+                                <div class="k-location-tile k-southland"></div>
+                                <span class="k-location-label">Otago Region</span>
+                            </li>
+                            <li>
+                                <div class="k-location-tile k-otago"></div>
+                                <span class="k-location-label">Southland Region</span>
+                            </li>
                         </ul>
                     </div>
 
 
-                </div>
-
-
-                <div class="k-block">
-                    <div class="k-donate-wrapper">
-                        <h1 style="color: white">Donate</h1>
-                    </div>
-
-                    <p>Koru Care NZ is an independent charity, and as such relies on the generosity and support of the community to make its trips possible. A donation to Koru Care helps to bring children together, children who all face some challenge in their lives, be it an ongoing medical condition, terminal illness or some other challenge in their life.
-                        How To Donate</p>
-
-                    <p>To start donating to help Koru Care you can select one of the options below:</p>
-
-                    <ul>
-                        <li style="text-align: left;">Online – Make a Personal Donation, or if you’re a company, click on one of the buttons above.</li>
-                        <li style="text-align: left;">Givealittle – Click this Givealittle link to make a donation.</li>
-                        <li style="text-align: left;">Call Koru Care NZ – 09 5232456</li>
-                    </ul>
                 </div>
 
                 <div class="k-block">
@@ -406,6 +438,23 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="k-block k-donate">
+                <div class="k-donate-wrapper">
+                </div>
+
+                <h1 style="color: white">Donate</h1>
+
+                <p>Koru Care NZ is an independent charity, and as such relies on the generosity and support of the community to make its trips possible. A donation to Koru Care helps to bring children together, children who all face some challenge in their lives, be it an ongoing medical condition, terminal illness or some other challenge in their life.
+                    How To Donate</p>
+
+                <p>To start donating to help Koru Care you can select one of the options below:</p>
+
+                <ul>
+                    <li style="text-align: left;">Online – Make a Personal Donation, or if you’re a company, click on one of the buttons above.</li>
+                    <li style="text-align: left;">Givealittle – Click this Givealittle link to make a donation.</li>
+                    <li style="text-align: left;">Call Koru Care NZ – 09 5232456</li>
+                </ul>
             </div>
         </div>
     </div>
