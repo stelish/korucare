@@ -154,7 +154,7 @@
         }
 
         .k-tile{
-            width: 500px;
+            width: 270px;
             min-height: 250px;
             float: left;
             margin: 20px;
@@ -331,6 +331,9 @@
                     <h1>Locations</h1>
                 </div>
                 <div class="k-navs-middle-nav">
+                    <h1>News</h1>
+                </div>
+                <div class="k-navs-middle-nav">
                     <h1>Partners</h1>
                 </div>
                 <div class="k-navs-middle-nav">
@@ -380,7 +383,7 @@
                         <!--</script>-->
                     <!--</div>-->
 
-                        <h1>Lorem Ipsum</h1>
+                        <h1>Our Locations</h1>
                         simply dummy text of the printing and typesetting industry.
 
 
@@ -408,30 +411,8 @@
 
                 </div>
 
-                <div class="k-block k-blackout">
-                    <script src="vendor/mediaelement/build/jquery.js"></script>
-                    <script src="vendor/mediaelement//build/mediaelement-and-player.min.js"></script>
-                    <link rel="stylesheet" href="vendor/mediaelement/build/mediaelementplayer.min.css" />
-
-                    <h1>Partners</h1>
-                    <video width="640" height="360" id="player1" preload="none">
-                        <source type="video/youtube" src="https://youtu.be/lhjEDQT4c5Y" />
-                    </video>
-                    <script>
-                        jQuery(document).ready(function($) {
-                            $('#player1').mediaelementplayer();
-                        });
-                    </script>
-
-                    <style>
-                        .mejs-container {
-                            margin: 0 auto !important;
-                        }
-                    </style>
-                </div>
-
                 <div class="k-tiles k-block clearfix">
-                    <h1>Our Locations</h1>
+                    <h1>Our News</h1>
                     <div class="k-tile">
                         <image src="img/12195124_10203617835205587_6323645368294507667_o.jpg" class="k-image-zoom"></image>
                         <div class="k-tile-desc">
@@ -461,6 +442,32 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="k-block k-blackout">
+                <script src="vendor/mediaelement/build/jquery.js"></script>
+                <script src="vendor/mediaelement//build/mediaelement-and-player.min.js"></script>
+                <link rel="stylesheet" href="vendor/mediaelement/build/mediaelementplayer.min.css" />
+
+                <h1 style="color: #fff">Partners</h1>
+                <video width="95%" height="480" id="player1" preload="none">
+                    <source type="video/youtube" src="https://youtu.be/lhjEDQT4c5Y" />
+                </video>
+                <script>
+                    jQuery(document).ready(function($) {
+                        $('#player1').mediaelementplayer();
+                    });
+                </script>
+
+                <style>
+                    .mejs-container {
+                        margin: 0 auto !important;
+                    }
+                    video{
+                        width: 95% !important;
+                        height: auto;
+                    }
+                </style>
             </div>
 
             <div class="k-block k-donate">
