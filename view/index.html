@@ -276,16 +276,16 @@
         }
 
         .k-otago{
-            background: url("img/otago.jpg") no-repeat 0 50%;
+            background: url("img/13731054_1200209350003082_719186638445735887_o.jpg") no-repeat 55% 10%;
         }
         .k-auckland{
-            background: url("img/akl-pan.jpg") no-repeat 60% 0;
+            background: url("img/12195124_10203617835205587_6323645368294507667_o.jpg") no-repeat 60% 60%;
         }
         .k-southland{
-            background: url("img/otago.jpg") no-repeat 0;
+            background: url("img/14183780_1096959707006313_799921147881265235_n.jpg") no-repeat 0;
         }
         .k-christhurch{
-            background: url("img/otago.jpg") no-repeat 0;
+            background: url("img/14192550_1096959767006307_1953057803412548037_n.jpg") no-repeat 10% 10%;
         }
 
         .k-donate{
@@ -310,6 +310,11 @@
             filter: brightness(0.8);
             margin-left: -15px;
             margin-right: 15px;
+        }
+
+        .k-blackout{
+            background: #212121;
+            padding-bottom: 50px;
         }
 
     </style>
@@ -403,8 +408,26 @@
 
                 </div>
 
-                <div class="k-block">
+                <div class="k-block k-blackout">
+                    <script src="vendor/mediaelement/build/jquery.js"></script>
+                    <script src="vendor/mediaelement//build/mediaelement-and-player.min.js"></script>
+                    <link rel="stylesheet" href="vendor/mediaelement/build/mediaelementplayer.min.css" />
+
                     <h1>Partners</h1>
+                    <video width="640" height="360" id="player1" preload="none">
+                        <source type="video/youtube" src="https://youtu.be/lhjEDQT4c5Y" />
+                    </video>
+                    <script>
+                        jQuery(document).ready(function($) {
+                            $('#player1').mediaelementplayer();
+                        });
+                    </script>
+
+                    <style>
+                        .mejs-container {
+                            margin: 0 auto !important;
+                        }
+                    </style>
                 </div>
 
                 <div class="k-tiles k-block clearfix">
@@ -439,6 +462,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="k-block k-donate">
                 <div class="k-donate-wrapper">
                 </div>
@@ -463,8 +487,7 @@
 
     </footer>
 
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyC71b81QhdAeR7OwVHPi77EC2Y3Ugrp2qs&callback=initMap"></script>
-
+    <!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyC71b81QhdAeR7OwVHPi77EC2Y3Ugrp2qs&callback=initMap"></script>-->
 
 </body>
 </html>
