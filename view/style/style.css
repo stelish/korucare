@@ -1,0 +1,370 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    margin:0;
+    padding:0;
+}
+header{
+    font-family: 'Open Sans Condensed', sans-serif;
+    background: #fff;
+    padding: 10px 15px;
+    min-height: 50px;
+    width: 100%;
+    margin:0 -15px;
+}
+
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.k-button{
+    background: orange;
+    color: #fff;
+    width: 300px;
+    min-height: 30px;
+    font-weight: bolder;
+    padding: 10px 0px 0px 0px;
+    margin: 5px 20px;
+}
+
+.k-logo{
+    max-height: 50px;
+    margin: 0;
+    position: absolute;
+    padding: 0;
+    top: 10px;
+    left: 10px;
+}
+.k-logo img{
+    height: 95px;
+    width: auto;
+    margin-left: -40px;
+    margin-top: -15px;
+}
+
+.k-navs-middle{
+    display: table;
+    margin: 0 auto;
+}
+
+.k-navs-middle-nav{
+    position: relative;
+    display: inline-block;
+    color: #333;
+    padding: 10px 23px;
+    line-height: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.k-navs-middle-nav > h1 {
+    margin:0;
+}
+
+.k-navs-right{
+    margin: 0;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    right: 10px;
+}
+
+.k-navs-right ul{
+    list-style: none;
+}
+
+.k-main{
+    /*padding: 15px;*/
+    min-height: 600px;
+}
+
+.k-block {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.k-block h1{
+    font-size: 2.8em;
+}
+
+.k-hero{
+    width: 100%;
+    min-height: 800px;
+    background: url(../img/Air-NZ-Koru-Care-Flight-Tyrese-Whittaker-Carterton.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.k-banner{
+    padding: 5px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin:5px;
+    display: table;
+}
+
+.k-bottom-right{
+    position: absolute;
+    right: 40px;
+    bottom: 40%;
+}
+
+.k-magenta{
+    background-color: orange;
+}
+
+.k-content{
+    width: 100%;
+    min-height: 600px;
+    background: #eee;
+    position: relative;
+    margin-top: -20px;
+    padding-top: 30px;
+}
+
+.k-content-wrapper{
+    max-width:1250px;
+    margin:0 auto;
+}
+
+.k-tiles {
+    margin: 0 auto 20px;
+    padding: 20px;
+    background:#fff;
+}
+
+.k-tile{
+    width: 270px;
+    min-height: 250px;
+    float: left;
+    margin: 20px;
+    position: relative;
+}
+
+.k-tile-button{
+    background: orange;
+    color: #fff;
+    width: 100%;
+    min-height: 30px;
+    font-weight: bolder;
+    padding: 10px 0px 0px 0px;
+    margin-top: 15px;
+}
+
+.k-tile > img{
+    width: 100%;
+    height: auto;
+}
+
+.k-tile-desc{
+    background: #fff;
+    padding: 5px;
+}
+
+.k-tile-desc h1{
+    margin:0;
+}
+
+footer{
+    width:100%;
+    min-height: 300px;
+    background: #232323;
+    margin:0 -15px;
+    padding:0;
+}
+
+.k-map{
+    width: 100%;
+    height:450px;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.k-image-zoom{
+    -webkit-transform: translateZ(0);
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+    transition: transform .3s;
+    -webkit-transition: -webkit-transform .3s;
+    -moz-transition: -moz-transform .3s;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+@keyframes animatedBackground {
+    from { background-position: 0 50%; }
+    to { background-position: 100% 50%;}
+}
+
+@keyframes zoomBackground {
+    from { background-size: 200% !important; }
+    to {  background-size: 400% !important; }
+}
+
+
+.k-location-tiles{
+    width: 100%;
+    height: 612px;
+    display: inline-flex;
+    margin: 0;
+}
+
+.k-location-ul{
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+}
+
+.k-location-ul li{
+    overflow: hidden;
+    float: left;
+    margin: 2px;
+    position: relative;
+    width: 49%;
+    height:49%;
+}
+
+.k-location-tile{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -webkit-filter: brightness(0.6);
+    filter: brightness(0.6);
+}
+
+.k-location-tile:hover{
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.k-location-label{
+    color: #fff;
+    display: block;
+    font-size: 26px;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    text-shadow: 1px 1px #333;
+    -webkit-transition: -webkit-transform .25s;
+    transition: -webkit-transform .25s;
+    transition: transform .25s, -webkit-transform .25s;
+    word-break: break-word;
+    z-index: 1;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+}
+
+.k-otago{
+    background: url("../img/13731054_1200209350003082_719186638445735887_o.jpg") no-repeat 55% 10%;
+}
+.k-auckland{
+    background: url("../img/12195124_10203617835205587_6323645368294507667_o.jpg") no-repeat 60% 60%;
+}
+.k-southland{
+    background: url("../img/14183780_1096959707006313_799921147881265235_n.jpg") no-repeat 0;
+}
+.k-christhurch{
+    background: url("../img/14192550_1096959767006307_1953057803412548037_n.jpg") no-repeat 10% 10%;
+}
+
+.k-donate{
+    position: relative;
+    text-align: center;
+}
+
+
+.k-donate-wrapper{
+    background: url("../img/kc-02.jpg") no-repeat center center;
+    min-height: 300px;
+    -webkit-filter: brightness(0.8);
+    filter: brightness(0.8);
+    margin-left: -15px;
+    margin-right: 15px;
+}
+
+.k-donate-amount{
+    padding: 15px;
+    width: 25%;
+    border: solid 1px orange;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.k-donate-dollar{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.k-fixed-donate{
+    display: inline-flex;
+    width: 75%;
+}
+
+.k-blackout{
+    background: #212121;
+    padding-bottom: 50px;
+}
+
+.k-video {
+    padding: 0 !important;
+    margin: 0;
+}
+
+.k-random-donate{
+    background: #fff;
+    padding: 20px 15px;
+    display: inline-flex;
+    width: 75%;
+    margin: 15px 5px;
+}
+
+.k-random-donate label{
+    padding: 12px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.k-random-donate input{
+    padding: 5px 10px;
+    border-radius: 2px;
+    border-style: none;
+    border: solid 1px #ccc;
+    height: 30px;
+    margin-top: 4px;
+    font-size: 25px;
+    width: 150px;
+    color: orangered;
+}
+
+.k-donate-amount .k-button{
+    width: 85%;
+}
