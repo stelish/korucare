@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "Koru Care NZ is a charity for children who have disabilities or a terminal illness. Koru Care are the only kids charity that do thr Trip of a Lifetime for these children, destinations include Disneyland and Goldcoast. Please show your support and donate to this worthy childrens charity.",
   "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -37,6 +43,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/stelish/korucare/issues"
-  },
-  "homepage": "https://github.com/stelish/korucare#readme"
+  }
 }
