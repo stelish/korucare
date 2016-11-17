@@ -27,14 +27,23 @@ app.route('/banners')
         res.sendFile(path.join(__dirname + '/views/banners/req.params[0]'));
     });
 
+app.route('/node_modules/*')
+    .get(function(req, res) {
+        console.log('got node req param: '+req.params[0]);
+        res.sendFile(path.join(__dirname + '/node_modules/'+ req.params[0]));
+    });
+
 
 /**
  * Serves everything else
  */
 app.route('/*')
     .get(function(req, res) {
+        console.log('got req param: '+req.params[0]);
         res.sendFile(path.join(__dirname + '/view/'+req.params[0]));
     });
+
+
 
 // Bind to port
 var SERVER_PORT = 3001;
