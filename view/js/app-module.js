@@ -2,7 +2,9 @@
  * Created by stevekelly on 12/11/16.
  */
 (function (app) {
-    app.AppModule = function AppModule() {}
+    app.AppModule = function AppModule() {
+
+    };
 
     app.AppModule.annotations = [
         new ng.core.NgModule({
@@ -14,7 +16,8 @@
                 app.AboutComponent,
                 app.RegionsComponent,
                 app.MediaComponent,
-                app.DonateComponent
+                app.DonateComponent,
+                app.FooterComponent
             ],
             bootstrap: [app.BodyContentComponent]
         })

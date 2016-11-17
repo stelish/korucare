@@ -16,6 +16,7 @@
                 '<regions-comp></regions-comp>'+
                 '<media-comp></media-comp>'+
                 '<donate-comp></donate-comp>'+
+                '<footer-comp></footer-comp>'+
             '</div>'
         })
     ];

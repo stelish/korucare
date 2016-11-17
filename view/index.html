@@ -13,11 +13,11 @@
     <meta property="og:description" content="Koru Care NZ is a charity for children who have disabilities or a terminal illness. Koru Care are the only kids charity that do thr Trip of a Lifetime for these children, destinations include Disneyland and Goldcoast. Please show your support and donate to this worthy childrens charity." />
     <meta property="og:url" content="http://www.korucare.co.nz/" />
     <meta property="og:site_name" content="Koru Care NZ" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="vendor/fonts/roboto.css" rel="stylesheet">
+    <link href="vendor/fonts/josefin.css" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" rel="stylesheet">
+    <link href="vendor/aos/aos.css" rel="stylesheet">
     <script src="vendor/mediaelement/build/jquery.js"></script>
     <script src="vendor/mediaelement/build/mediaelement-and-player.min.js"></script>
     <link rel="stylesheet" href="vendor/mediaelement/build/mediaelementplayer.min.css" />
@@ -25,13 +25,14 @@
     <script src="../node_modules/core-js/client/shim.min.js"></script>
     <script src="../node_modules/zone.js/dist/zone.js"></script>
     <script src="../node_modules/reflect-metadata/Reflect.js"></script>
-
+    <script src="../node_modules/systemjs/dist/system.js"></script>
     <script src="../node_modules/rxjs/bundles/Rx.umd.js"></script>
     <script src="../node_modules/@angular/core/bundles/core.umd.js"></script>
     <script src="../node_modules/@angular/common/bundles/common.umd.js"></script>
     <script src="../node_modules/@angular/compiler/bundles/compiler.umd.js"></script>
     <script src="../node_modules/@angular/platform-browser/bundles/platform-browser.umd.js"></script>
     <script src="../node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
+
 
     <style>
         [aos="fade"] {
@@ -49,10 +50,9 @@
 
 <body-comp>Loading...</body-comp>
 
-<footer>
 
-</footer>
 
+<script src="../node_modules/ng2-simple-page-scroll/bundles/ng2-simple-page-scroll.js"></script>
 <script type="text/javascript" src="js/directives/mediaComponent.js"></script>
 <script type="text/javascript" src="js/directives/heroComponent.js"></script>
 <script type="text/javascript" src="js/directives/headerComponent.js"></script>
@@ -60,12 +60,13 @@
 <script type="text/javascript" src="js/directives/regionsComponent.js"></script>
 <script type="text/javascript" src="js/directives/donateComponent.js"></script>
 <script type="text/javascript" src="js/directives/aboutComponent.js"></script>
+<script type="text/javascript" src="js/directives/footerComponent.js"></script>
 <script type="text/javascript" src="js/directives/bodyComponent.js"></script>
 
 <script type="text/javascript" src="js/app-module.js"></script>
 <script type="text/javascript" src="js/app.js"></script>
 
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+<script src="vendor/aos/aos.js"></script>
 
 <script>
     AOS.init({
