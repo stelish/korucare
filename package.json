@@ -4,8 +4,19 @@
   "description": "Koru Care NZ is a charity for children who have disabilities or a terminal illness. Koru Care are the only kids charity that do thr Trip of a Lifetime for these children, destinations include Disneyland and Goldcoast. Please show your support and donate to this worthy childrens charity.",
   "main": "server.js",
   "dependencies": {
-    "ng2-simple-page-scroll": "^1.0.2",
-    "systemjs": "^0.19.41"
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-filerev": "^2.3.1",
+    "grunt-include-source": "^1.0.0",
+    "grunt-usemin": "^3.1.1",
+    "htmlmin": "0.0.7",
+    "load-grunt-config": "^0.19.2",
+    "systemjs": "^0.19.41",
+    "time-grunt": "^1.4.0"
   },
   "devDependencies": {
     "body-parser": "^1.15.0",

@@ -261,7 +261,7 @@ Fix startvolume parsing in Silverlight fallback (https://github.com/johndyer/med
 *2.14.2 (2014/04/04)*
 
 * Additional progress bar checks for hidden/missing bars
-* Add Gruntfile.js build support (https://github.com/johndyer/mediaelement/pull/1147) @jeremyfelt
+* Add olGruntfile.js build support (https://github.com/johndyer/mediaelement/pull/1147) @jeremyfelt
 * Add #! line to Builder.py for legacy builds (https://github.com/johndyer/mediaelement/pull/1036) @amenonsen
 
 *2.14.1 (2014/03/31)*
