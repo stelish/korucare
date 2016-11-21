@@ -10,6 +10,7 @@
         new ng.core.Component({
             selector: 'my-app',
             template: '<div></div>',
+
             directives: [app.HeaderComponent,app.BodyContentComponent]
         })
     ];

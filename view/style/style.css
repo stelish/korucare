@@ -3,6 +3,7 @@ body{
     background: #fff;
     margin:0;
     padding:0;
+    overflow-x: hidden;
 }
 header{
     font-family: 'Open Sans Condensed', sans-serif;
@@ -364,11 +365,11 @@ footer{
     background-size: cover !important;
 }
 .k-southland{
-    background: url("../img/dunedin/20161013_191549.jpg") no-repeat;
+    background: url("../img/dunedin/otago_dw.jpg") no-repeat;
     background-size: cover !important;
 }
 .k-christhurch{
-    background: url("../img/christchurch/IMG_5073.PNG") no-repeat;
+    background: url("../img/christchurch/IMG_5073.png") no-repeat;
     background-size: cover !important;
 }
 
@@ -495,6 +496,128 @@ footer{
     }
 }
 
+@media (max-width: 990px) {
+    .k-bottom-right {
+        position: absolute;
+        right: 5px;
+        bottom: 10%;
+        left: 15px;
+    }
+    .k-hero{
+        min-height:600px;
+    }
+
+    .k-banner{
+        font-size:32px;
+    }
+    .k-block{
+        padding: 15px 5px 15px 0;
+    }
+    .k-location-ul{
+        width:100%;
+    }
+    .k-location-label{
+        bottom:110px;
+    }
+
+    .k-location-ul li {
+        overflow: hidden;
+        float: left;
+        margin: 2px;
+        width: 48%;
+        height: 40%;
+    }
+
+    .k-random-donate {
+        padding: 20px 5px;
+        width: 95%;
+        margin: 15px 0px;
+    }
+
+    .k-button {
+        padding: 15px 0px 0px 0px;
+    }
+
+    .k-random-donate label {
+        font-size: 16px;
+    }
+
+    .k-sub-title {
+        padding: 0 5%;
+    }
+
+    .k-fixed-donate {
+        display: block;
+        width: 95%;
+    }
+
+    .k-donate-amount {
+        padding: 10px;
+        width: 38%;
+        float: left;
+    }
+
+    .k-fixed-donate {
+        display: block;
+        width: 100%;
+        padding: 0px 5px 0 8px;
+    }
+
+    .k-footer-bottom {
+        width: 100%;
+        padding: 0;
+    }
+
+    .k-address {
+        min-width: 100%;
+    }
+
+    .k-footer-bottom ul {
+         display: block;
+    }
+
+    .k-site-link {
+        padding: 5px;
+    }
+
+    .k-site-link a {
+        font-size: 24px;
+    }
+
+    .k-address p {
+        font-size: 20px;
+    }
+
+    .k-contact-link a {
+        font-size: 20px;
+    }
+
+    .k-contact-link {
+        font-size: 20px;
+    }
+
+    .k-select select {
+        font-size: 20px;
+    }
+
+    .stelish-mark{
+        font-size:20px;
+    }
+
+    .stelish-mark a{
+        font-size: 40px;
+    }
+
+    .k-footer-bottom ul li {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .k-social {
+        width: 100%;
+    }
+}
+
 .k-contact-locations{
     border-right: solid 1px #000;
     margin-right: 15px;
@@ -536,7 +659,7 @@ footer{
 }
 
 .k-site-link{
-    padding:5px;
+    padding:3px;
 }
 
 .k-site-link a{
@@ -545,7 +668,7 @@ footer{
 }
 
 .k-site-link a:hover {
-    color: #206cf3;
+    /*color: #206cf3;*/
     text-decoration: underline;
 }
 
@@ -575,6 +698,10 @@ footer{
 }
 
 .stelish-mark{
+    display:block;
+}
+
+.stelish-mark a{
     font-family: BeautifulMess;
     font-size:28px;
 }

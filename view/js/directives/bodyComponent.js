@@ -6,9 +6,14 @@
 
     };
 
+    document.body.onscroll = function() {
+        console.log("scrolling");
+    };
+
     app.BodyContentComponent.annotations = [
         new ng.core.Component({
             selector: 'body-comp',
+            directives: [],
             template: '<div class="k-main">' +
                 '<header-comp></header-comp>'+
                 '<hero-comp></hero-comp>'+

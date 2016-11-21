@@ -3,7 +3,9 @@
  */
 (function(app) {
     app.FooterComponent = function () {
-
+        this.goTo = function(location) {
+            window.location.hash = location;
+        };
     };
 
     app.FooterComponent.annotations = [

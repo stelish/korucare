@@ -4,8 +4,9 @@
 
 (function(app) {
     app.HeaderComponent = function () {
-
-
+        this.goTo = function(location) {
+            window.location.hash = location;
+        };
     };
 
     app.HeaderComponent.annotations = [

@@ -45,11 +45,11 @@
 
             <li>
                 <h2 style="margin-bottom:5px;">Site Map</h2>
-                <div class="k-site-link"><a href="#home">home</a></div>
-                <div class="k-site-link"><a href="#about">about</a></div>
-                <div class="k-site-link"><a href="#regions">regions</a></div>
-                <div class="k-site-link"><a href="#partners">partners</a></div>
-                <div class="k-site-link"><a href="#donate">donate</a></div>
+                <div class="k-site-link"><a (click)="goTo('#about-comp')">home</a></div>
+                <div class="k-site-link"><a (click)="goTo('#about-comp')">about</a></div>
+                <div class="k-site-link"><a (click)="goTo('#about-regions')">regions</a></div>
+                <div class="k-site-link"><a (click)="goTo('#about-partners')">partners</a></div>
+                <div class="k-site-link"><a (click)="goTo('#about-donate')">donate</a></div>
             </li>
 
             <li>
@@ -80,8 +80,8 @@
     </div>
 
     <!-- creator -->
-    <div class="k-block">
-        created with love | <a class="stelish-mark">Stelish Creations.</a>
+    <div class="k-block stelish-mark">
+        created with love | <a>Stelish Creations.</a>
     </div>
 
 </footer>
