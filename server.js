@@ -14,33 +14,12 @@ var fs         = require("fs");
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
-
-/**
- * Get's Main Admin Dashboard Page
- * Used to enable short request to /admin
- */
-app.route('/banners')
-    .get(function(req, res) {
-        console.log('Accessing the banner section ...');
-        console.log(app.path());
-        res.type('.html');
-        res.sendFile(path.join(__dirname + '/views/banners/req.params[0]'));
-    });
-
-app.route('/node_modules/*')
-    .get(function(req, res) {
-        console.log('got node req param: '+req.params[0]);
-        res.sendFile(path.join(__dirname + '/node_modules/'+ req.params[0]));
-    });
-
-
 /**
  * Serves everything else
  */
 app.route('/*')
     .get(function(req, res) {
-        console.log('got req param: '+req.params[0]);
-        res.sendFile(path.join(__dirname + '/view/'+req.params[0]));
+        res.sendFile(path.join(__dirname + '/view/dist/'+req.params[0]));
     });
 
 

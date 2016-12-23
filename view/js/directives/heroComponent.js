@@ -7,12 +7,12 @@
         $scope.ind = 0;
         $scope.heroArr = [
             {
-                caption: 'lorem ipsum...',
+                caption: 'Lorem Ipsum',
                 region: 'Auckland',
                 img: 'img/auckland/Image1.jpg'
             },
             {
-                caption: 'lorem ipsum...',
+                caption: 'Lorem Ipsum',
                 region: 'Dunedin',
                 img: 'img/dunedin/20161013_191549.jpg'
             },
